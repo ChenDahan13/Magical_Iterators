@@ -97,7 +97,7 @@ using namespace std;
             container.addElement(13);
             container.addElement(-1);
     
-            AscendingIterator iterator(container);
+            MagicalContainer::AscendingIterator iterator(container);
 
             // Checks start different from end
             bool b = iterator.begin() != iterator.end();
@@ -141,7 +141,7 @@ using namespace std;
             container.addElement(13);
             container.addElement(-1);
     
-            SideCrossIterator iterator(container);
+            MagicalContainer::SideCrossIterator iterator(container);
 
             // Checks start different from end
             bool b = iterator.begin() != iterator.end();
@@ -185,7 +185,7 @@ using namespace std;
             container.addElement(13);
             container.addElement(-1);
         
-            PrimeIterator iterator(container);
+            MagicalContainer::PrimeIterator iterator(container);
     
             // Checks start different from end
             bool b = iterator.begin() != iterator.end();

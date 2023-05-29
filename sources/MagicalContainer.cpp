@@ -1,7 +1,7 @@
 #include "MagicalContainer.hpp"
 
 using namespace std;
-
+using namespace ariel;
 
 /* MagicalContainer Functions */
 void MagicalContainer::addElement(int element) {
@@ -37,55 +37,55 @@ void MagicalContainer::removeElement(int element) {
 
 
 /* AscendingIterator Functions */
-AscendingIterator::AscendingIterator(MagicalContainer& container) {
+MagicalContainer::AscendingIterator::AscendingIterator(MagicalContainer& container) {
     cout << "AscendingIterator constructor" << endl;
 }
 
-AscendingIterator::AscendingIterator(const AscendingIterator& other) {
+MagicalContainer::AscendingIterator::AscendingIterator(const AscendingIterator& other) {
     cout << "AscendingIterator copy constructor" << endl;
 }
 
-bool AscendingIterator::operator!=(const AscendingIterator& other) const {
+bool MagicalContainer::AscendingIterator::operator!=(const AscendingIterator& other) const {
     cout << "AscendingIterator operator!=" << endl;
     return false;
 }
 
-bool AscendingIterator::operator==(const AscendingIterator& other) const {
+bool MagicalContainer::AscendingIterator::operator==(const AscendingIterator& other) const {
     cout << "AscendingIterator operator==" << endl;
     return false;
 }
 
-bool AscendingIterator::operator<(const AscendingIterator& other) const {
+bool MagicalContainer::AscendingIterator::operator<(const AscendingIterator& other) const {
     cout << "AscendingIterator operator<" << endl;
     return false;
 }
 
-bool AscendingIterator::operator>(const AscendingIterator& other) const {
+bool MagicalContainer::AscendingIterator::operator>(const AscendingIterator& other) const {
     cout << "AscendingIterator operator>" << endl;
     return false;
 }
 
-AscendingIterator& AscendingIterator::operator=(const AscendingIterator& other) {
+MagicalContainer::AscendingIterator& MagicalContainer::AscendingIterator::operator=(const AscendingIterator& other) {
     cout << "AscendingIterator operator=" << endl;
     return *this;
 }
 
-AscendingIterator& AscendingIterator::operator++() {
+MagicalContainer::AscendingIterator& MagicalContainer::AscendingIterator::operator++() {
     cout << "AscendingIterator operator++" << endl;
     return *this;
 }
 
-int AscendingIterator::operator*() const {
+int MagicalContainer::AscendingIterator::operator*() const {
     cout << "AscendingIterator operator*" << endl;
     return 0;
 }
 
-AscendingIterator& AscendingIterator::begin() {
+MagicalContainer::AscendingIterator& MagicalContainer::AscendingIterator::begin() {
     cout << "AscendingIterator begin" << endl;
     return *this;
 }
 
-AscendingIterator& AscendingIterator::end() {
+MagicalContainer::AscendingIterator& MagicalContainer::AscendingIterator::end() {
     cout << "AscendingIterator end" << endl;
     return *this;
 }
@@ -94,55 +94,55 @@ AscendingIterator& AscendingIterator::end() {
 
 
 /* SideCrossIterator Functions */
-SideCrossIterator::SideCrossIterator(MagicalContainer& container) {
+MagicalContainer::SideCrossIterator::SideCrossIterator(MagicalContainer& container) {
     cout << "SideCrossIterator constructor" << endl;
 }
 
-SideCrossIterator::SideCrossIterator(const SideCrossIterator& other) {
+MagicalContainer::SideCrossIterator::SideCrossIterator(const SideCrossIterator& other) {
     cout << "SideCrossIterator copy constructor" << endl;
 }
 
-bool SideCrossIterator::operator!=(const SideCrossIterator& other) const {
+bool MagicalContainer::SideCrossIterator::operator!=(const SideCrossIterator& other) const {
     cout << "SideCrossIterator operator!=" << endl;
     return false;
 }
 
-bool SideCrossIterator::operator==(const SideCrossIterator& other) const {
+bool MagicalContainer::SideCrossIterator::operator==(const SideCrossIterator& other) const {
     cout << "SideCrossIterator operator==" << endl;
     return false;
 }
 
-bool SideCrossIterator::operator<(const SideCrossIterator& other) const {
+bool MagicalContainer::SideCrossIterator::operator<(const SideCrossIterator& other) const {
     cout << "SideCrossIterator operator<" << endl;
     return false;
 }
 
-bool SideCrossIterator::operator>(const SideCrossIterator& other) const {
+bool MagicalContainer::SideCrossIterator::operator>(const SideCrossIterator& other) const {
     cout << "SideCrossIterator operator>" << endl;
     return false;
 }
 
-SideCrossIterator& SideCrossIterator::operator=(const SideCrossIterator& other) {
+MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::operator=(const SideCrossIterator& other) {
     cout << "SideCrossIterator operator=" << endl;
     return *this;
 }
 
-SideCrossIterator& SideCrossIterator::operator++() {
+MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::operator++() {
     cout << "SideCrossIterator operator++" << endl;
     return *this;
 }
 
-int SideCrossIterator::operator*() const {
+int MagicalContainer::SideCrossIterator::operator*() const {
     cout << "SideCrossIterator operator*" << endl;
     return 0;
 }
 
-SideCrossIterator& SideCrossIterator::begin() {
+MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::begin() {
     cout << "SideCrossIterator begin" << endl;
     return *this;
 }
 
-SideCrossIterator& SideCrossIterator::end() {
+MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::end() {
     cout << "SideCrossIterator end" << endl;
     return *this;
 }
@@ -151,55 +151,55 @@ SideCrossIterator& SideCrossIterator::end() {
 
 
 /* PrimeIterator Functions */
-PrimeIterator::PrimeIterator(MagicalContainer& container) {
+MagicalContainer::PrimeIterator::PrimeIterator(MagicalContainer& container) {
     cout << "PrimeIterator constructor" << endl;
 }
 
-PrimeIterator::PrimeIterator(const PrimeIterator& other) {
+MagicalContainer::PrimeIterator::PrimeIterator(const PrimeIterator& other) {
     cout << "PrimeIterator copy constructor" << endl;
 }
 
-bool PrimeIterator::operator!=(const PrimeIterator& other) const {
+bool MagicalContainer::PrimeIterator::operator!=(const PrimeIterator& other) const {
     cout << "PrimeIterator operator!=" << endl;
     return false;
 }
 
-bool PrimeIterator::operator==(const PrimeIterator& other) const {
+bool MagicalContainer::PrimeIterator::operator==(const PrimeIterator& other) const {
     cout << "PrimeIterator operator==" << endl;
     return false;
 }
 
-bool PrimeIterator::operator<(const PrimeIterator& other) const {
+bool MagicalContainer::PrimeIterator::operator<(const PrimeIterator& other) const {
     cout << "PrimeIterator operator<" << endl;
     return false;
 }
 
-bool PrimeIterator::operator>(const PrimeIterator& other) const {
+bool MagicalContainer::PrimeIterator::operator>(const PrimeIterator& other) const {
     cout << "PrimeIterator operator>" << endl;
     return false;
 }
 
-PrimeIterator& PrimeIterator::operator=(const PrimeIterator& other) {
+MagicalContainer::PrimeIterator& MagicalContainer::PrimeIterator::operator=(const PrimeIterator& other) {
     cout << "PrimeIterator operator=" << endl;
     return *this;
 }
 
-PrimeIterator& PrimeIterator::operator++() {
+MagicalContainer::PrimeIterator& MagicalContainer::PrimeIterator::operator++() {
     cout << "PrimeIterator operator++" << endl;
     return *this;
 }
 
-int PrimeIterator::operator*() const {
+int MagicalContainer::PrimeIterator::operator*() const {
     cout << "PrimeIterator operator*" << endl;
     return 0;
 }
 
-PrimeIterator& PrimeIterator::begin() {
+MagicalContainer::PrimeIterator& MagicalContainer::PrimeIterator::begin() {
     cout << "PrimeIterator begin" << endl;
     return *this;
 }
 
-PrimeIterator& PrimeIterator::end() {
+MagicalContainer::PrimeIterator& MagicalContainer::PrimeIterator::end() {
     cout << "PrimeIterator end" << endl;
     return *this;
 }
